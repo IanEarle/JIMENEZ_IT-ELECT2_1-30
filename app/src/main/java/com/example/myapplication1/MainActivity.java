@@ -12,11 +12,13 @@ import android.widget.Button;
 
 //import sun.rmi.runtime.Log;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity
+{
     String tag = "MainActivity";
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -28,11 +30,13 @@ public class MainActivity extends AppCompatActivity {
         Log.e(tag, "This is an error log.");
 
         Button button = (Button) findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
+        button.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v)
+            {
                 Log.i(tag,"Button Clicked!");
-                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                Intent intent = new Intent(MainActivity.this, MainActivity2Linear.class);
                 startActivity(intent);
 
 

@@ -6,4 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".SecondActivity">
 
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/To"
+        android:inputType="textMultiLine"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="31dp" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine2"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/Subject"
+        android:inputType="textMultiLine"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="91dp" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine3"
+        android:layout_width="386dp"
+        android:layout_height="486dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/Message"
+        android:inputType="textMultiLine"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="151dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Send"
+        tools:layout_editor_absoluteX="301dp"
+        tools:layout_editor_absoluteY="667dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

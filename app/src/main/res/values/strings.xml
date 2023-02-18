@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">My Application1</string>
+    <string name="To">To</string>
+    <string name="Message">Message</string>
+    <string name="Subject">Subject</string>
+    <string name="Send">Send</string>
+
 </resources>

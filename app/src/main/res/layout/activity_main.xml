@@ -14,16 +14,52 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.516" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        android:text="SEND"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.984"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.981" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine8"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/To"
+        android:inputType="textMultiLine"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine9"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/Subject"
+        android:inputType="textMultiLine"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="95dp" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine10"
+        android:layout_width="402dp"
+        android:layout_height="618dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/Message"
+        android:inputType="textMultiLine"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="172dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
