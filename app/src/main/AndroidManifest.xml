@@ -12,15 +12,6 @@
         android:theme="@style/Theme.MyApplication1"
         tools:targetApi="31">
         <activity
-            android:name=".ListActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity2Linear"
-            android:exported="false" />
-        <activity
-            android:name=".ThirdActivity"
-            android:exported="false" />
-        <activity
             android:name=".SecondActivity"
             android:exported="false" />
         <activity
