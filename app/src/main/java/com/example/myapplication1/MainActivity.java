@@ -14,7 +14,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity
 {
-    String tag = "MainActivity";
+    private final String tag = "MainActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v)
             {
                 Log.i(tag,"Button Clicked!");
-                Intent intent = new Intent(MainActivity.this, MainActivity2Linear.class);
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
                 startActivity(intent);
 
 

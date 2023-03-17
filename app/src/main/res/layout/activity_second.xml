@@ -1,49 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SecondActivity">
 
     <EditText
-        android:id="@+id/editTextTextMultiLine"
-        android:layout_width="400dp"
-        android:layout_height="60dp"
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
         android:ems="10"
-        android:gravity="start|top"
         android:hint="@string/To"
-        android:inputType="textMultiLine"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="31dp" />
+        android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine2"
-        android:layout_width="400dp"
-        android:layout_height="60dp"
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:ems="10"
-        android:gravity="start|top"
         android:hint="@string/Subject"
-        android:inputType="textMultiLine"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="91dp" />
+        android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine3"
-        android:layout_width="386dp"
-        android:layout_height="486dp"
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/button3"
+        android:layout_below="@id/editText2"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:ems="10"
-        android:gravity="start|top"
+        android:gravity="start"
         android:hint="@string/Message"
         android:inputType="textMultiLine"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="151dp" />
+        android:textAlignment="gravity" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Send"
-        tools:layout_editor_absoluteX="301dp"
-        tools:layout_editor_absoluteY="667dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/Send" />
+
+</RelativeLayout>
